@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Addres book</title>
+    <style>
+     .nev1{
+         cursor: pointer;
+        width: 150px;
+        height: 45px;
+     }
+     body{
+         background-color: lawngreen;
+     }
+     h3{
+         color:  orangered;
+         text-align: center;
+     }
+ 
+     
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row col-md-6">
+        <h1 class=" bg-warning text-center"><i class="fa-solid fa-book"></i>  Addres book <i class="fa-solid fa-book"></i></h1><br>
+        <div class="row col-md-12 justify-content-center"></div>
+            <h3>Új adat hozzáadása</h3>
+          </div>
+            <div class="row col-md-2">
+        <input type="text" name="" id="neve" class="m-2 " placeholder="Neve:"><br>
+        <input type="text" name="" id="lakhelye" class="m-2" placeholder="Lakhelye:"><br>
+        <input type="text" name="" id="neme" class="m-2" placeholder="Neme:"><br>
+        <input type="number" name="" id="telefonszama" class="m-2" placeholder="Telefonszáma:"><br>
+        <input type="button" value="Új adat rögzítése" class="m-2 btn btn-info" onclick="rogzites()">
+        <input type="button" value="Adatok törlése" class="m-2 btn btn-warning" onclick="torles()">
+      
+    
+    </div>
+       
+        
+
+   
+
+        <br>
+        <br>
+    <div class="row"> <div class="nev1"   onclick="lekerdez(event) " data-toggle="modal" data-target="#exampleModal" > <br></div>
+   
+    <div class="row col-md-8">
+        <p class="adatok" ></p>
+    </div>
+    </div>
+                
+     </div>
+
+     <span></span>
+     <script src="data.js"></script>
+
+
+    
+
+
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>  
+</body>
+</html>
